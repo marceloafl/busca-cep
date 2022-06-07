@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link href="./assets/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="sign-up__wrapper">
+        <h1 class="sign-up__title">Cadastre seu endereço</h1>
+        <form class="sign-up__form">
+            <fieldset class="fieldset__wrapper cep">
+                <label for="cep" class="label">Digite o CEP</label>
+                <input type="number" class="input" id="cep" name="cep" data-input="cep" maxlength="9">
+            </fieldset>
+
+            <fieldset class="fieldset__wrapper logradouro">
+                <label for="logradouro" class="label">Logradouro/Nome</label>
+                <input type="text" class="input" id="logradouro" name="logradouro" data-input="logradouro">
+            </fieldset>
+
+            <div class="inputs__wrapper">
+                <fieldset class="fieldset__wrapper">
+                    <label for="numero" class="label">Número</label>
+                    <input type="text" class="input" id="numero" name="numero" data-input="numero">
+                </fieldset>
+                <fieldset class="fieldset__wrapper">
+                    <label for="bairro" class="label">Bairro/Distrito</label>
+                    <input type="text" class="input" id="bairro" name="bairro" data-input="bairro">
+                </fieldset>
+                <fieldset class="fieldset__wrapper">
+                    <label for="estado" class="label">Estado</label>
+                    <input type="text" class="input" id="estado" name="estado" data-input="estado">
+                </fieldset>
+            </div>
+            
+            <div class="inputs__wrapper">
+            <fieldset class="fieldset__wrapper">
+                <label for="complemento" class="label">Complemento</label>
+                <input type="text" class="input" id="complemento" name="complemento" data-input="complemento">
+            </fieldset>
+                <fieldset class="fieldset__wrapper">
+                    <label for="cidade" class="label">Cidade</label>
+                    <input type="text" class="input" id="cidade" name="cidade" data-input="cidade">
+                </fieldset>
+                <fieldset class="fieldset__wrapper">
+                    <label for="pais" class="label">País</label>
+                    <input type="text" class="input" id="pais" name="pais" data-input="pais">
+                </fieldset>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
